@@ -76,3 +76,16 @@ body {
     font-size: 14px; /* Adjust the font size of the author name */
     color: #666; /* Adjust the color of the author name */
 }
+
+.back-icon {
+    margin-right: 10px;
+}
+
+a {
+    color: #4fc3f7; /* Light blue link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

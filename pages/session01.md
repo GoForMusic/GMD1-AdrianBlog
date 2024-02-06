@@ -9,3 +9,5 @@ This is content of Chapter 1.
 ## Sub-Chapter 1.1
 
 This is content of Sub-Chapter 1.1.
+
+[<i class="fas fa-arrow-left"></i> Back](index.html)

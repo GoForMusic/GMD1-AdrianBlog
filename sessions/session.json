@@ -2,17 +2,9 @@
   {
     "session_avatar": "https://avatars.githubusercontent.com/u/26068529?v=4",
     "session_title": "Session 01",
-    "session_date": "05/02-2024",
+    "session_date": "06/02/2024",
     "session_author": "Author: Adrian-Cristian Militaru",
     "session_url": "session.html?id=01",
     "session_content": "../pages/session01.md"
-  },
-  {
-    "session_avatar": "https://avatars.githubusercontent.com/u/26068529?v=4",
-    "session_title": "Session 02",
-    "session_date": "06/02-2024",
-    "session_author": "Author: Adrian-Cristian Militaru",
-    "session_url": "session.html?id=02",
-    "session_content": "<p>This is the content of Session 02. Phasellus vehicula mauris vitae ligula placerat, ut rutrum lacus fringilla. Cras sed justo ut sem congue laoreet. Sed lacinia, quam nec vestibulum rhoncus, lacus magna efficitur magna, vel tincidunt felis libero nec purus. Aliquam vel mi nec mi commodo convallis.</p><img src='image2.jpg' alt='Image 2'>"
   }
 ]
