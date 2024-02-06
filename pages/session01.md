@@ -1,6 +1,8 @@
 This is the content of Session 01. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec odio ac odio ultrices convallis nec ut risus. Ut consequat consectetur ex a bibendum. Donec rutrum libero nec ligula suscipit vehicula. Nullam lacinia, est vitae egestas efficitur, justo nisi fermentum risus, vitae posuere odio quam vel enim. Suspendisse potenti.
 
-![Image 1](image1.jpg)
+<p style="text-align: center;">
+    <img src="image1.jpg" alt="Image 1">
+</p>
 
 # Chapter 1
 
