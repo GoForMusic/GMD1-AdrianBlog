@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/post.css"> <!-- Your custom CSS for blog styling -->
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
+</head>
+
+<body>
+    <div class="blog-post">
+        <table>
+            <tr>
+                <th colspan="3" class="blog-header">
+                    <img src="avatar.jpg" alt="User Avatar" class="avatar" id="session-avatar">
+                    <div class="user-info">
+                        <p class="session-title" id="session-title"></p>
+                        <p class="user-name" id="session-author"></p>
+                        <p class="date">Posted on <span id="session-date"></span></p>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <td class="post-content" id="session-content">
+                    <!-- Session content will be dynamically loaded here -->
+                </td>
+                <td class="table-of-contents">
+                    <h2>Table of Contents</h2>
+                    <ul id="table-of-contents-list">
+                        <!-- Table of contents will be dynamically loaded here -->
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="../js/session.js"></script>
+</body>
+
+</html>

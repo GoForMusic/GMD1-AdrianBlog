@@ -1,0 +1,78 @@
+/* Paste your custom CSS here */
+body {
+    background-color: #2b2b2b; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+    font-size: 16px; /* Increased font size */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sessions-table {
+    display: flex;
+    flex-direction: column;
+    background-color: #424242; /* Dark gray background for the session */
+    border-radius: 8px; /* Rounded corners for the session */
+    overflow: hidden; /* Ensure rounded corners are applied */
+}
+
+.session {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; /* Increased padding */
+    border-bottom: 1px solid #616161;
+}
+
+.session-content {
+    display: flex;
+    align-items: center;
+}
+
+.session-avatar {
+    margin-right: 10px; /* Adjust spacing between avatar and session details */
+}
+
+.avatar {
+    width: 50px; /* Adjust the width of the avatar image */
+    height: 50px; /* Adjust the height of the avatar image */
+    border-radius: 50%; /* Make the avatar image round */
+}
+
+.session-details {
+    flex-grow: 1; /* Allow session details to take remaining space */
+}
+
+.session-title {
+    font-weight: bold;
+    font-size: 18px; /* Increased font size */
+}
+
+.session-date {
+    font-style: italic;
+    font-size: 16px; /* Increased font size */
+}
+
+.file-icons {
+    margin-right: 10px;
+}
+
+.session-link {
+    color: #4fc3f7; /* Light blue link color */
+    text-decoration: none;
+}
+
+.session-link:hover {
+    text-decoration: underline;
+}
+
+.session-author {
+    font-size: 14px; /* Adjust the font size of the author name */
+    color: #666; /* Adjust the color of the author name */
+}

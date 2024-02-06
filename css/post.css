@@ -1,0 +1,97 @@
+.blog-post {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #424242; /* Dark gray background for the table */
+    border-radius: 8px; /* Rounded corners for the table */
+}
+
+th, td {
+    border: 1px solid #616161; /* Slightly lighter border color */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333333; /* Dark background for table header */
+    color: #e0e0e0; /* Light text color for table header */
+    border-top-left-radius: 8px; /* Rounded top left corner for header */
+    border-top-right-radius: 8px; /* Rounded top right corner for header */
+}
+
+td {
+    border-top: none; /* Remove top border for table data cells */
+    vertical-align:top;
+}
+
+.avatar {
+    width: 50px; /* Adjust the width of the avatar image */
+    height: 50px; /* Adjust the height of the avatar image */
+    border-radius: 50%; /* Make the avatar image round */
+    margin-right: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.date {
+    margin: 0;
+    color: #666666; /* Lighter text color for date */
+}
+
+.blog-content {
+    border-top: 1px solid #616161; /* Slightly lighter border color for content separation */
+    border-bottom-left-radius: 8px; /* Rounded bottom left corner for content */
+    border-bottom-right-radius: 8px; /* Rounded bottom right corner for content */
+}
+
+/* Table of Contents */
+.table-of-contents {
+    background-color: #333333;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0; /* Ensures the table of contents stays at the top */
+    z-index: 1; /* Ensure it's above other elements */
+}
+
+/* Adjust alignment of table of contents */
+.table-of-contents h2 {
+    margin-top: 0; /* Remove default margin */
+    font-size: 14px; /* Adjust as needed */
+    color: #e0e0e0;
+}
+
+.table-of-contents ul {
+    margin: 0; /* Remove default margin */
+    padding: 0;
+}
+
+.table-of-contents ul li {
+    margin-bottom: 10px;
+}
+
+.table-of-contents ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px; /* Adjust as needed */
+    display: block; /* Ensure entire area is clickable */
+    font-weight: normal;
+}
+
+.table-of-contents ul li a:hover {
+    color: #e0e0e0;
+}
+
+/* Nested list for sub-chapters */
+.table-of-contents ul ul {
+    margin-left: 20px; /* Adjust indentation for sub-chapters */
+}
