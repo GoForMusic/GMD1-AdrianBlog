@@ -10,6 +10,46 @@ This is content of Chapter 1.
 
 ## Sub-Chapter 1.1
 
+- das
+- test
+    -   test
+
+- [ ] Job
+    -   [x] Step 1
+  + [x] Step 2
+  + [ ] Step 3
+
+
+
 This is content of Sub-Chapter 1.1.
 
 [<i class="fas fa-arrow-left"></i> Back](index.html)
+
+## Code blocks
+
+### Common
+
+```
+This is a common code snippet, without syntax highlight and line number.
+```
+
+### Specific Language
+
+```bash
+if [ $? -ne 0 ]; then
+  echo "The command was not successful.";
+  #do the needful / exit
+fi;
+```
+
+```csharp
+Class Player{
+    private string text {private get; private set;}
+}
+```
+
+### Specific filename
+
+```html
+<a href="https://www.w3schools.com">Back to School</a>
+```
