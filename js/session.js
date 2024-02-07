@@ -9,7 +9,6 @@ function importHighlightJS() {
     });
 }
 
-// Function to fetch Markdown content and convert it to HTML
 function fetchMarkdownAndConvertToHTML(sessionId) {
     // Fetch Markdown content and convert it to HTML
     fetch('../sessions/session.json')
@@ -18,16 +17,22 @@ function fetchMarkdownAndConvertToHTML(sessionId) {
             // Find the session with the matching ID
             const session = data.find(session => session.session_url === `session.html?id=${sessionId}`);
             if (session) {
+                document.getElementById('session-title').textContent = session.session_title;
+                document.getElementById('session-date').textContent = session.session_date;
+                document.getElementById('session-author').textContent = session.session_author;
+                document.getElementById('session-avatar').src = session.session_avatar;
+                
                 // Fetch the Markdown content from the file
                 fetch(session.session_content)
                     .then(response => response.text())
                     .then(markdownContent => {
+                        const markdownWithTablesReplaced = convertMarkdownTableToHTMLSyntax(markdownContent);
                         // Generate table of contents
-                        extractTableOfContentsFromMarkdown(markdownContent);
-
+                        extractTableOfContentsFromMarkdown(markdownWithTablesReplaced);
 
                         // Convert Markdown to HTML and apply syntax highlighting
-                        convertMarkdownToHTMLAndPrettyPrint(markdownContent);
+                        convertMarkdownToHTMLAndPrettyPrint(markdownWithTablesReplaced);
+                        
                     })
                     .catch(error => console.error('Error fetching Markdown content:', error));
             } else {
@@ -130,6 +135,38 @@ function convertMarkdownToHTML(markdownContent) {
 
     return htmlContent;
 }
+
+function convertMarkdownTableToHTMLSyntax(markdownContent) {
+    // Replace Markdown table syntax with HTML table syntax
+    return markdownContent.replace(/``table\s*\n([\s\S]+?)\n``/g, (match, tableContent) => {
+        const rows = tableContent.trim().split('\n');
+
+        const table = document.createElement('table');
+
+        // Create table rows
+        rows.forEach((rowContent, rowIndex) => {
+            // Skip rows that match the structure of the separator line
+            if (rowIndex==1) {
+                return;
+            }
+
+            const row = document.createElement('tr');
+            const cells = rowContent.split('|').map(cell => cell.trim());
+
+            // Create table cells
+            cells.forEach((cellContent, cellIndex) => {
+                const cell = rowIndex === 0 ? document.createElement('th') : document.createElement('td');
+                cell.innerHTML = convertMarkdownToHTML(cellContent);
+                row.appendChild(cell);
+            });
+
+            table.appendChild(row);
+        });
+
+        return table.outerHTML + '<br>';
+    });
+}
+
 
 // Update session.js to use the new function
 document.addEventListener("DOMContentLoaded", function() {

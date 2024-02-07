@@ -53,3 +53,28 @@ Class Player{
 ```html
 <a href="https://www.w3schools.com">Back to School</a>
 ```
+
+---
+
+``table
+First Header | Second Header
+------------ | -------------
+Content Cell | Content Cell | Content Cell
+Content Cell | Content Cell | Content Cell
+Content Cell | Content Cell
+Content Cell | Content Cell
+``
+
+``table
+First Header | Second Header
+------------ | -------------
+Content Cell | Content Cell
+Content Cell | Content Cell
+``
+
+``table
+First Header | Second Header
+------------ | -------------
+Content Cell | Content Cell
+Content Cell | Content Cell
+``
