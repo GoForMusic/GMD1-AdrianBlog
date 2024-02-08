@@ -1,0 +1,12 @@
+{
+	"name": "Static Website Development",
+	"image": "node:lts",
+	"extensions": [
+	  "dbaeumer.vscode-eslint"
+	],
+	"settings": {
+	  "eslint.enable": true
+	},
+	"forwardPorts": [8080],
+	"postCreateCommand": "npm install -g http-server && http-server -p 8080"
+}  
