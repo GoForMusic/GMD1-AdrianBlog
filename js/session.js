@@ -27,6 +27,7 @@ function fetchMarkdownAndConvertToHTML(sessionId) {
                     .then(response => response.text())
                     .then(markdownContent => {
                         const markdownWithTablesReplaced = convertMarkdownTableToHTMLSyntax(markdownContent);
+                        
                         // Generate table of contents
                         extractTableOfContentsFromMarkdown(markdownWithTablesReplaced);
 

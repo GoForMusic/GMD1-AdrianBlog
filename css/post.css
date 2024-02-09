@@ -95,3 +95,18 @@ td {
 .table-of-contents ul ul {
     margin-left: 20px; /* Adjust indentation for sub-chapters */
 }
+
+p {
+    font-size: 12px;
+}
+
+img {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
